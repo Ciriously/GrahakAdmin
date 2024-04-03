@@ -12,6 +12,7 @@ import ActiveUsers from '../../components/Dashboard/images/Card/Active-users.svg
 import ActiveTickets from '../../components/Dashboard/images/Card/Active-tickets.svg';
 import InboxAccepted from '../../components/Dashboard/images/Card/Inbox-accepted.svg';
 import InboxMissed from '../../components/Dashboard/images/Card/Inbox-mixed.svg';
+import QueryCard from '../../components/Dashboard/QueryCard';
 
 const ECommerce: React.FC = () => {
   return (
@@ -47,8 +48,13 @@ const ECommerce: React.FC = () => {
       </div>
 
       <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
-        <ChartOne />
-        <ChartTwo />
+        <div className="col-span-8">
+          <ChartOne />
+        </div>
+        <div className="col-span-4">
+          <QueryCard />
+        </div>
+        {/* <ChartTwo /> */}
         {/* <ChartThree /> */}
         {/* <MapOne />
         <div className="col-span-12 xl:col-span-8">
