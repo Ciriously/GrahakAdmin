@@ -9,9 +9,9 @@ const TabsSwitcher = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold mb-4">Inbox</h1>
+        <h1 className="text-2xl font-bold text-black mb-4">Inbox</h1>
         <p className="text-2xl mb-3 font-medium">34</p>
       </div>
       <input

@@ -5,6 +5,7 @@ import UserTwo from '../../images/user/user-02.png';
 import UserThree from '../../images/user/user-03.png';
 import UserFour from '../../images/user/user-04.png';
 import UserFive from '../../images/user/user-05.png';
+import Chatbtns from '../Message/Inbox/Chatbtns';
 
 const chatData: Chat[] = [
   {
@@ -59,12 +60,12 @@ const chatData: Chat[] = [
 
 const ChatCard = () => {
   return (
-    <div className="col-span-12 rounded-sm  bg-white py-4  ">
+    <div className="col-span-12 container overflow-auto mx-auto rounded-sm bg-white h-[30rem]">
       <div>
         {chatData.map((chat, key) => (
           <Link
             to="/"
-            className="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 "
+            className="flex items-center gap-5 py-3 px-3 hover:bg-gray-3 "
             key={key}
           >
             <div className="relative h-14 w-14 rounded-2xl">
@@ -99,6 +100,7 @@ const ChatCard = () => {
           </Link>
         ))}
       </div>
+      <Chatbtns />
     </div>
   );
 };
