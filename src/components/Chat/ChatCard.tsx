@@ -60,7 +60,7 @@ const chatData: Chat[] = [
 
 const ChatCard = () => {
   return (
-    <div className="col-span-12 container overflow-auto mx-auto rounded-sm bg-white h-[30rem]">
+    <div className="col-span-12 container overflow-auto mx-auto rounded-sm bg-white h-[31.5rem]">
       <div>
         {chatData.map((chat, key) => (
           <Link

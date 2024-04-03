@@ -1,4 +1,6 @@
 import Breadcrumb from '../components/Breadcrumbs/Breadcrumb';
+import ChatCard from '../components/Chat/ChatCard';
+import Chats from '../components/Chat/Chats';
 import InActiveChat from '../components/Message/Chats/InActiveChat';
 import Inbox from '../components/Message/Inbox/Inbox';
 import DefaultLayout from '../layout/DefaultLayout';
@@ -11,7 +13,8 @@ const Message = () => {
           <Inbox />
         </div>
         <div className="w-4/5">
-          <InActiveChat />
+          {/* <InActiveChat /> */}
+          <Chats />
         </div>
       </div>
     </DefaultLayout>
