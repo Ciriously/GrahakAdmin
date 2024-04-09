@@ -32,6 +32,7 @@
       {
         "label": "off"
       }
-    ]
+    ],
+    "typescript-config/consistent-casing": "off"
   }
 }

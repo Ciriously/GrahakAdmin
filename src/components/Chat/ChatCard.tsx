@@ -21,7 +21,7 @@ const chatData: Chat[] = [
     name: 'Henry Fisher',
     text: 'Waiting for you!',
     time: 12,
-    textCount: 0,
+    textCount: 1,
     color: '#DC3545',
   },
   {
@@ -29,7 +29,7 @@ const chatData: Chat[] = [
     name: 'Jhon Doe',
     text: "What's up?",
     time: 32,
-    textCount: 0,
+    textCount: 2,
     color: '#10B981',
   },
   {
@@ -45,7 +45,7 @@ const chatData: Chat[] = [
     name: 'Jhon Doe',
     text: 'How are you?',
     time: 32,
-    textCount: 0,
+    textCount: 3,
     color: '#10B981',
   },
   {
@@ -89,11 +89,22 @@ const ChatCard = () => {
                 </p>
               </div>
               {chat.textCount !== 0 && (
-                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary">
-                  <span className="text-sm font-medium text-white">
-                    {' '}
-                    {chat.textCount}
-                  </span>
+                <div className="flex">
+                  {chat.textCount === 1 && (
+                    <span className="bg-[#F4B425] bg-opacity-20 text-[#FC8B3F] inline-block text-center min-w-20 px-2 py-1 rounded-xl text-sm font-medium">
+                      Live
+                    </span>
+                  )}
+                  {chat.textCount === 2 && (
+                    <span className="bg-[#B8E1E2] text-[#006A66] inline-block text-center min-w-20 px-2 py-1 rounded-xl text-sm font-medium">
+                      Accept
+                    </span>
+                  )}
+                  {chat.textCount === 3 && (
+                    <span className="bg-[#D9352E] bg-opacity-20 text-[#D9352E] inline-block text-center min-w-20 px-2 py-1 rounded-xl text-sm font-medium">
+                      Missed
+                    </span>
+                  )}
                 </div>
               )}
             </div>

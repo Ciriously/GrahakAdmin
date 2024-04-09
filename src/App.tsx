@@ -15,6 +15,7 @@ import Settings from './pages/Settings';
 import Tables from './pages/Tables';
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
+import Chatlist from './components/Chat/Chatlist/Chatlist';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -129,6 +130,15 @@ function App() {
             <>
               <PageTitle title="Signin | TailAdmin - Tailwind CSS Admin Dashboard Template" />
               <SignIn />
+            </>
+          }
+        />
+        <Route
+          path="/calendar/Chatlist"
+          element={
+            <>
+              <PageTitle title="Signin | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <Chatlist />
             </>
           }
         />

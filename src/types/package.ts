@@ -1,6 +1,7 @@
 export type Package = {
   name: string;
-  price: number;
+  tag: string;
   invoiceDate: string;
   status: string;
+  email: string;
 };

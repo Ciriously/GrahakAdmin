@@ -12,7 +12,7 @@ const Chatbtns = () => {
       style={{ overflow: 'hidden' }}
     >
       <Link
-        to="#"
+        to="Chatlist"
         className="inline-flex items-center  mt-4 justify-center gap-3 rounded-md bg-[#B8E1E2] py-2 px-6 text-center font-bold text-[#006A66] hover:bg-opacity-90 lg:px-4 xl:px-6 w-3/5 "
       >
         <span>
