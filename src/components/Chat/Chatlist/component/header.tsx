@@ -7,10 +7,11 @@ const Header = () => {
       <div className="flex items-center">
         <button
           type="button"
-          className="py-2 px-4 flex justify-center items-center text-white bg-[#006A66] w-44 transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg mr-4"
+          className="py-2 flex justify-center items-center text-white bg-[#006A66] w-44 transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg mr-4"
         >
           Download
           <svg
+            className="pl-2"
             width="25"
             height="24"
             viewBox="0 0 25 24"
