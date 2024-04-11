@@ -65,16 +65,16 @@ const TicketCard: React.FC<TicketCardProps> = ({
       <div className="mb-4">
         {/* Ticket ID, Status, and TypeOfTicket badges */}
         <div className="flex mb-2">
-          <div className="border-2 font-bold border-slate-600 mr-1 bg-gray rounded-full px-4 text-sm text-slate-600 py-0.5">
+          <div className="border-2 font-bold border-slate-600 mr-1 bg-gray rounded-full px-4 text-xs text-slate-600 py-0.5">
             #{ticketId}
           </div>
           <div
-            className={`border-2 font-bold rounded-full px-4 text-sm py-0.5 ${statusColor} ${textColor}`}
+            className={`border-2 font-bold rounded-full px-4 text-xs py-0.5 ${statusColor} ${textColor}`}
           >
             {status}
           </div>
           <div
-            className={`border-2 font-bold rounded-full px-4 text-sm py-0.5 bg-purple-100 text-purple-500 ml-1`}
+            className={`border-2 font-bold rounded-full px-4 text-xs py-0.5 bg-purple-100 text-purple-500 ml-1`}
           >
             {typeOfTicket}
           </div>
@@ -90,7 +90,7 @@ const TicketCard: React.FC<TicketCardProps> = ({
       </div>
 
       {/* Priority and Time Created */}
-      <div className="flex items-center justify-between text-sm text-gray-500">
+      <div className="flex items-center justify-between text-xs text-gray-500">
         <span>
           Created{' '}
           {Math.floor((Date.now() - createdAt.getTime()) / 1000 / 60 / 60)}{' '}

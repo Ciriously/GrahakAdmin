@@ -53,12 +53,6 @@ const ECommerce: React.FC = () => {
         <div className="col-span-4">
           <QueryCard />
         </div>
-        {/* <ChartTwo /> */}
-        {/* <ChartThree /> */}
-        {/* <MapOne />
-        <div className="col-span-12 xl:col-span-8">
-          <TableOne />
-        </div> */}
       </div>
     </DefaultLayout>
   );

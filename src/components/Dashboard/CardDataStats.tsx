@@ -4,7 +4,7 @@ import trenddown from '../Dashboard/images/trenddown.svg';
 
 interface CardDataStatsProps {
   title: string;
-  total: string;
+  total: any;
   rate: string;
   levelUp?: boolean;
   levelDown?: boolean;
