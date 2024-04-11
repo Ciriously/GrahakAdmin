@@ -9,9 +9,9 @@ const TicketColumn: React.FC = () => {
       case 'open':
         return 'bg-red-500';
       case 'paused':
-        return 'bg-yellow-500';
+        return 'bg-[#FFC145]';
       case 'closed':
-        return 'bg-green-500';
+        return 'bg-[#7EA131]';
       default:
         return 'bg-gray-500';
     }
@@ -22,9 +22,9 @@ const TicketColumn: React.FC = () => {
       case 'open':
         return 'border-red-500';
       case 'paused':
-        return 'border-yellow-500';
+        return 'border-[#FFC145]';
       case 'closed':
-        return 'border-green-500';
+        return 'border-[#7EA131]';
       default:
         return 'border-gray-500';
     }

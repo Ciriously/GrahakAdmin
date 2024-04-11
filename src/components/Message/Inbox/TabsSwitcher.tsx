@@ -19,8 +19,8 @@ const TabsSwitcher = () => {
         type="search"
         placeholder="Search..."
       />
-      <div className="mb-4">
-        <ul className="flex justify-center -mb-px text-lg font-medium text-center">
+      <div>
+        <ul className="flex justify-center space-x-44 font-bold text-xl -mb-px  text-center">
           <li className="me-4" role="presentation">
             <button
               className={`inline-block p-4 rounded-t-lg ${

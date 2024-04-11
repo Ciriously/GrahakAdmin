@@ -71,7 +71,7 @@ const Header = () => {
           </svg>
         </button>
 
-        <div className="relative border border-slate-200 pr-2 rounded-xl ml-4">
+        <div className="relative  border-slate-200 pr-2 rounded-xl ml-4">
           <img
             src=""
             className="absolute left-3 top-1/2 transform -translate-y-1/2"

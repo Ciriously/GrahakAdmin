@@ -29,7 +29,7 @@ export interface Ticket {
         status: 'Open',
         title: 'Example Open Ticket 1',
         content: 'This is an example open ticket 1.',
-        priority: 'High',
+        priority: 'low',
         typeOfTicket: 'Delivery',
         createdAt: new Date(),
       },     {
@@ -58,7 +58,7 @@ export interface Ticket {
         status: 'Closed',
         title: 'Example Closed Ticket 1',
         content: 'This is an example closed ticket 1.',
-        priority: 'High',
+        priority: 'low',
         typeOfTicket: 'Delivery',
         createdAt: new Date(),
       },  {

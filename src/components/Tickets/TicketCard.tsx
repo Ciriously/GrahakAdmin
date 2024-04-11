@@ -28,15 +28,15 @@ const TicketCard: React.FC<TicketCardProps> = ({
       textColor = 'text-red-500';
       break;
     case 'paused':
-      statusColor = 'bg-yellow-100';
-      textColor = 'text-yellow-500';
+      statusColor = 'bg-[#E9C400] bg-opacity-10';
+      textColor = 'text-[#E9C400]';
       break;
     case 'closed':
       statusColor = 'bg-green-100';
       textColor = 'text-green-500';
       break;
     default:
-      statusColor = 'bg-gray-500';
+      statusColor = 'bg-gray-100';
       textColor = 'text-gray-500';
   }
 
@@ -45,27 +45,27 @@ const TicketCard: React.FC<TicketCardProps> = ({
   let fontColor: string;
   switch (priority.toLowerCase()) {
     case 'low':
-      priorityColor = 'bg-blue-100';
-      fontColor = 'text-blue-700';
+      priorityColor = 'bg-[#D58D49] bg-opacity-20';
+      fontColor = 'text-[#D58D49]';
       break;
     case 'medium':
-      priorityColor = 'bg-yellow-100';
-      fontColor = 'text-yellow-700';
+      priorityColor = 'bg-yellow-100 bg-opacity-20';
+      fontColor = 'text-yellow-400';
       break;
     case 'high':
-      priorityColor = 'bg-red-100';
-      fontColor = 'text-red-700';
+      priorityColor = 'bg-[#D8727D] bg-opacity-10';
+      fontColor = 'text-[#D8727D]';
       break;
     default:
       priorityColor = 'bg-gray-100';
       fontColor = 'text-gray-700';
   }
   return (
-    <div className="bg-white rounded-xl p-6 h-auto md:h-50">
+    <div className="bg-white rounded-xl p-6 h-full md:h-max">
       <div className="mb-4">
         {/* Ticket ID, Status, and TypeOfTicket badges */}
         <div className="flex mb-2">
-          <div className="border-2 font-bold border-slate-600 mr-1 bg-gray rounded-full px-4 text-xs text-slate-600 py-0.5">
+          <div className="border-2 font-bold border-slate-600 mr-1 bg-slate-100 rounded-full px-4 text-xs text-slate-900 py-0.5">
             #{ticketId}
           </div>
           <div
@@ -81,12 +81,11 @@ const TicketCard: React.FC<TicketCardProps> = ({
         </div>
 
         {/* Title Header Section */}
-        {/* Title Header Section */}
         <div className="flex justify-between items-center">
-          <h2 className="text-xl font-semibold mb-2">{title}</h2>
+          <h2 className="text-lg text-[#0D062D] font-semibold mb-2">{title}</h2>
           <span>{createdAt.toLocaleDateString()}</span>
         </div>
-        <p className="text-gray-600">{content}</p>
+        <p className="text-gray-600 text-sm">{content}</p>
       </div>
 
       {/* Priority and Time Created */}
