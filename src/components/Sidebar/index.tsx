@@ -179,7 +179,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Profile --> */}
               <li>
                 <NavLink
-                  to="/profile"
+                  to="/Tickets"
                   className={`group relative flex justify-between text-sm items-center gap-2.5 rounded-sm py-2 px-2 font-medium text-[#006A66] duration-300 ease-in-out  ${
                     pathname.includes('profile') && ''
                   }`}
